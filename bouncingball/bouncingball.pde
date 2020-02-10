@@ -14,4 +14,10 @@ void draw() {
 
   fill(0);
   ellipse(x, y, 20, 20);
+  if ( x >=width || x < 0) {
+    speedX *= -1;
+  }
+  if (y >=height || y < 0) {
+    speedY *= -1;
+  }
 }
